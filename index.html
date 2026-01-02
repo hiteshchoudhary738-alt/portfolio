@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitesh | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo"><h2>HITESH! 😊</h2></div>
+            <ul class="menu-list">
+                <li><a class="nav-btn" href="#home">HOME</a></li>
+                <li><a class="nav-btn" href="#about">ABOUT</a></li>
+                <li><a class="nav-btn" href="#skills">SKILLS</a></li>
+                <li><a class="nav-btn" href="#projects">PROJECTS</a></li>
+                <li><a class="nav-btn" href="#contactme">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="great-heading">Hello, I am <span class="highlight">HITESH!</span></h1>
+            <p class="description">A passionate Web Developer.</p>
+        </div>
+        <div class="hero-image-container">
+            <img class="hero-image" src="me.jpg" alt="Hitesh Photo">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="section-heading">About </h2>
+        <div class="about-box">
+            <p>Hello! I'm Hitesh, pursuing my bachelor's degree in Information Technology at Rajiv Gandhi Institute of Petroleum Technology. I am an aspiring Web Developer and a computer science enthusiast with a passion for building clean, accessible, and responsive websites. I have honed my skills in HTML, CSS, JavaScript, and Python. I enjoy solving complex problems and turning logical challenges into user-friendly digital experiences.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2 class="section-heading">My Skills</h2>
+        
+        <div class="skill-item">
+            <h3>HTML</h3>
+            <div class="progress-container">
+                <div class="progress-bar html-bar" style="width: 90%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <h3>CSS</h3>
+            <div class="progress-container">
+                <div class="progress-bar css-bar" style="width: 80%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <h3>JavaScript</h3>
+            <div class="progress-container">
+                <div class="progress-bar js-bar" style="width: 50%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <h3>Python</h3>
+            <div class="progress-container">
+                <div class="progress-bar python-bar" style="width: 30%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-heading">Projects</h2>
+        
+        
+        <div class="projects-container">
+            <div class="project-card" onclick="toggleProject(this)">
+                <h3 class="project-title">Portfolio Website</h3>
+                <div class="project-details">
+                    <p>I built this site to showcase my skills. I believe the best way to learn is by building.</p>
+                    <ul>
+                        <li>🔹 HTML5 for structure</li>
+                        <li>🔹 CSS3 for animations</li>
+                        <li>🔹 JavaScript for logic</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="toggleProject(this)">
+                <h3 class="project-title">Company Website</h3>
+                <div class="project-details">
+                    <p>A professional landing page designed for a corporate client focusing on clear UI/UX. Through which they can make their business grow more.</p>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="toggleProject(this)">
+                <h3 class="project-title">Todo-List App</h3>
+                <div class="project-details">
+                    <p>A functional task manager app built with JavaScript allowing users to add and delete tasks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactme" class="contactme">
+        <h2 class="section-heading">Contact Me</h2>
+        <form class="contact-form" action="https://formsubmit.co/el/sujewe" method="post">
+            <input name="name" type="text" placeholder="Your Name " required>
+            <input name="email" type="email" placeholder="Your Email" required>
+            <input name="phone" type="tel" placeholder="Phone Number">
+            <button type="submit" class="nav-btn submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright © 2026 Hitesh. All Rights Reserved. Made with ❤️.</p>
+    </footer>
+
+    <script>
+        function toggleProject(card) {
+            card.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
